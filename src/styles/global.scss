@@ -1,0 +1,36 @@
+// -------------------------------------------------------------------------------------------
+
+:root {
+	transition: none;
+	background-color: var(--background);
+
+	body {
+		margin: 0;
+		background-color: var(--background);
+		animation: fade-in var(--motion-extra-long) var(--emphasized);
+		display: none;
+	}
+
+	* {
+		box-sizing: border-box;
+		transition: var(--motion-medium) var(--emphasized);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	* {
+		color-scheme: light;
+	}
+}
+
+.dark-theme {
+	* {
+		color-scheme: dark;
+	}
+}
+
+// -------------------------------------------------------------------------------------------
