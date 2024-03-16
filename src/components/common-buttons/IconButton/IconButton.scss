@@ -1,0 +1,39 @@
+// -------------------------------------------------------------------------------------------
+
+.container[data-component='icon-button'] {
+	height: 40px;
+	width: 40px;
+	border: none;
+	outline: none;
+	padding: 0;
+	display: grid;
+	place-content: center;
+	border-radius: var(--shape-extra-large);
+	background-color: unset;
+
+	svg {
+		fill: var(--on-surface-variant);
+	}
+
+	&:focus-visible {
+		background-color: var(--overlay);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media (hover: hover) {
+	.container[data-component='icon-button']:hover {
+		cursor: pointer;
+		background-color: var(--overlay);
+	}
+}
+
+@media (hover: none) {
+	.container[data-component='icon-button']:active {
+		cursor: default;
+		background-color: var(--overlay);
+	}
+}
+
+// -------------------------------------------------------------------------------------------

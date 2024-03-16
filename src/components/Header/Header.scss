@@ -1,0 +1,101 @@
+// -------------------------------------------------------------------------------------------
+
+.container[data-component='header'] {
+	height: 64px;
+	width: 100vw;
+	background-color: var(--inverse-overlay);
+	position: fixed;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(var(--blur));
+	animation: fade-in calc(var(--motion-extra-long) * 4) var(--emphasized);
+
+	.frame[data-component='header'] {
+		height: inherit;
+		max-width: var(--max-width);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 calc(var(--space) - 8px) 0 var(--space);
+		margin: auto;
+
+		.leading[data-component='header'] {
+			.headline[data-component='header'] {
+				font-family: 'Poppins';
+				color: var(--on-surface);
+
+				&::first-letter {
+					color: var(--primary);
+				}
+			}
+		}
+
+		.trailing[data-component='header'] {
+			.navigation-buttons-container[data-component='header'] {
+				display: flex;
+				align-items: center;
+			}
+
+			.icon-button-container[data-component='header'] {
+				display: none;
+			}
+		}
+	}
+}
+
+.navigation-screen[data-component='header'] {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(var(--blur));
+	background-color: var(--inverse-overlay);
+	flex-direction: column;
+	z-index: 2;
+	display: none;
+
+	.top[data-component='header'] {
+		height: 64px;
+		padding: 0 calc(var(--space) - 8px) 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+
+	.bottom[data-component='header'] {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
+		border-radius: var(--shape-medium);
+		margin: var(--space);
+		padding: var(--space);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 840px) {
+	.container[data-component='header'] {
+		.frame[data-component='header'] {
+			.trailing[data-component='header'] {
+				.navigation-buttons-container[data-component='header'] {
+					display: none;
+				}
+
+				.icon-button-container[data-component='header'] {
+					display: flex;
+				}
+			}
+		}
+	}
+
+	.navigation-screen[data-component='header'] {
+		display: flex;
+	}
+}
+
+// -------------------------------------------------------------------------------------------

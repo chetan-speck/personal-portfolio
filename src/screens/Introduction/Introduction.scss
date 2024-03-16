@@ -1,0 +1,213 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='introduction'] {
+	.container[data-component='introduction'] {
+		min-height: 100vh;
+		max-width: var(--max-width);
+		display: flex;
+		gap: var(--space);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.leading[data-component='introduction'] {
+			flex: 1;
+			display: grid;
+			place-content: center;
+
+			.greeting[data-component='introduction'] {
+				color: var(--on-surface-variant);
+				animation: fade-in calc(var(--motion-extra-long) * 1)
+					var(--emphasized);
+			}
+
+			.name[data-component='introduction'] {
+				font-family: 'Poppins';
+				color: var(--primary);
+				margin: var(--space) 0 0 0;
+				animation: fade-in calc(var(--motion-extra-long) * 2)
+					var(--emphasized);
+			}
+
+			.profession[data-component='introduction'] {
+				color: var(--on-surface-variant);
+				margin: 8px 0 0 0;
+				animation: fade-in calc(var(--motion-extra-long) * 3)
+					var(--emphasized);
+			}
+
+			.description[data-component='introduction'] {
+				color: var(--on-surface-variant);
+				margin: var(--space) 0 0 0;
+				animation: fade-in calc(var(--motion-extra-long) * 4)
+					var(--emphasized);
+			}
+
+			.buttons-container[data-component='introduction'] {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: var(--space);
+				animation: fade-in calc(var(--motion-extra-long) * 5)
+					var(--emphasized);
+
+				.resume-button[data-component='introduction'] {
+					height: 56px;
+					flex: 1;
+					border: none;
+					outline: none;
+					text-decoration: none;
+					padding: 0 24px;
+					display: grid;
+					place-content: center;
+					border-radius: var(--shape-extra-large);
+					background-color: unset;
+					color: var(--primary);
+					border: 1px solid var(--outline);
+					margin: var(--space) 0 0 0;
+					position: relative;
+					overflow: hidden;
+
+					.overlay[data-component='introduction'] {
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-color: var(--overlay);
+						opacity: 0;
+					}
+				}
+
+				.contact-button[data-component='introduction'] {
+					height: 56px;
+					flex: 1;
+					border: none;
+					outline: none;
+					text-decoration: none;
+					padding: 0 24px;
+					display: grid;
+					place-content: center;
+					border-radius: var(--shape-extra-large);
+					background-color: var(--primary);
+					color: var(--on-primary);
+					margin: var(--space) 0 0 0;
+					position: relative;
+					overflow: hidden;
+
+					.overlay[data-component='introduction'] {
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-color: var(--inverse-overlay);
+						opacity: 0;
+					}
+				}
+
+				.resume-button[data-component='introduction'],
+				.contact-button[data-component='introduction'] {
+					&:focus-visible {
+						.overlay[data-component='introduction'] {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+
+		.trailing[data-component='introduction'] {
+			flex: 1;
+			display: grid;
+			place-content: center;
+
+			.frame[data-component='introduction'] {
+				display: grid;
+				place-content: center;
+
+				.profile[data-component='introduction'] {
+					width: 90%;
+					border-radius: var(--shape-full);
+					background-color: var(--primary-container);
+					margin: auto;
+					animation: fade-in calc(var(--motion-extra-long) * 1)
+						var(--emphasized);
+					box-shadow: inset 0 0 16px var(--shadow);
+					background-image: linear-gradient(
+						0deg,
+						var(--primary),
+						var(--primary-container)
+					);
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 840px) {
+	.section[data-component='introduction'] {
+		.container[data-component='introduction'] {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='introduction'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='introduction'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media (hover: hover) {
+	.section[data-component='introduction'] {
+		.container[data-component='introduction'] {
+			.leading[data-component='introduction'] {
+				.buttons-container[data-component='introduction'] {
+					.resume-button[data-component='introduction']:hover,
+					.contact-button[data-component='introduction']:hover {
+						cursor: pointer;
+
+						.overlay[data-component='introduction'] {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (hover: none) {
+	.section[data-component='introduction'] {
+		.container[data-component='introduction'] {
+			.leading[data-component='introduction'] {
+				.buttons-container[data-component='introduction'] {
+					.resume-button[data-component='introduction']:active,
+					.contact-button[data-component='introduction']:active {
+						cursor: pointer;
+
+						.overlay[data-component='introduction'] {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------

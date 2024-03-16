@@ -16,6 +16,12 @@
 		transition: var(--motion-medium) var(--emphasized);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	::selection {
+		background-color: var(--primary);
+		color: var(--on-primary);
 	}
 }
 

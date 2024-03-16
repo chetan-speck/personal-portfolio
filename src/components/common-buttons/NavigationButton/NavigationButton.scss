@@ -1,0 +1,40 @@
+// -------------------------------------------------------------------------------------------
+
+.container[data-component='navigation-button'] {
+	height: 40px;
+	width: fit-content;
+	border: none;
+	outline: none;
+	color: var(--on-surface-variant);
+	text-decoration: none;
+	padding: 0 24px;
+	display: grid;
+	place-content: center;
+	border-radius: var(--shape-extra-large);
+	background-color: unset;
+
+	&:focus-visible {
+		background-color: var(--overlay);
+		color: var(--on-surface);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media (hover: hover) {
+	.container[data-component='navigation-button']:hover {
+		cursor: pointer;
+		background-color: var(--overlay);
+		color: var(--on-surface);
+	}
+}
+
+@media (hover: none) {
+	.container[data-component='navigation-button']:active {
+		cursor: default;
+		background-color: var(--overlay);
+		color: var(--on-surface);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
