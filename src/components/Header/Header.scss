@@ -9,6 +9,7 @@
 	left: 0;
 	backdrop-filter: blur(var(--blur));
 	animation: fade-in calc(var(--motion-extra-long) * 4) var(--emphasized);
+	z-index: 1;
 
 	.frame[data-component='header'] {
 		height: inherit;

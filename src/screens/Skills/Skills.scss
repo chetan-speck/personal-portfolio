@@ -1,0 +1,93 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='skills'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.container[data-component='skills'] {
+		max-width: var(--max-width);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.title[data-component='skills'] {
+			color: var(--primary);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.sub-title[data-component='skills'] {
+			color: var(--on-surface-variant);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.skill-cards-container[data-component='skills'] {
+			display: grid;
+			grid-template-columns: repeat(4, auto);
+			gap: var(--space);
+
+			.skill-card[data-component='skills'] {
+				background-color: var(--surface);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: var(--space);
+				border-radius: var(--shape-large);
+
+				.icon[data-component='skills'] {
+					display: block;
+				}
+
+				.label[data-component='skills'] {
+					color: var(--on-surface);
+					text-align: center;
+					margin: var(--space) 0 0 0;
+				}
+
+				.description[data-component='skills'] {
+					color: var(--on-surface-variant);
+					text-align: center;
+					margin: 8px 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='skills'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='skills'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 840px) {
+	.section[data-component='skills'] {
+		.container[data-component='skills'] {
+			.skill-cards-container[data-component='skills'] {
+				grid-template-columns: repeat(3, auto);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.section[data-component='skills'] {
+		.container[data-component='skills'] {
+			.skill-cards-container[data-component='skills'] {
+				grid-template-columns: repeat(2, auto);
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------

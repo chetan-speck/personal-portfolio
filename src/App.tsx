@@ -12,6 +12,7 @@ import './styles/typography.scss';
 
 import Header from './components/Header/Header';
 import Introduction from './screens/Introduction/Introduction';
+import Skills from './screens/Skills/Skills';
 
 // -------------------------------------------------------------------------------------------
 
@@ -20,6 +21,7 @@ const App = () => {
 		<>
 			<Header />
 			<Introduction />
+			<Skills />
 		</>
 	);
 };
