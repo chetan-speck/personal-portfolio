@@ -1,0 +1,108 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='contact'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.container[data-component='contact'] {
+		max-width: var(--max-width);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.title[data-component='contact'] {
+			color: var(--primary);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.sub-title[data-component='contact'] {
+			color: var(--on-surface-variant);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.contacts-container[data-component='contact'] {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: var(--space);
+
+			.contact[data-component='contact'] {
+				background-color: var(--surface);
+				padding: var(--space);
+				border-radius: var(--shape-large);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				overflow: hidden;
+
+				.icon[data-component='contact'] {
+					display: block;
+				}
+
+				.contact-title[data-component='contact'] {
+					color: var(--on-surface);
+					margin: var(--space) 0 0 0;
+					text-align: center;
+				}
+
+				.href[data-component='contact'] {
+					color: var(--on-surface);
+					margin: 8px 0 0 0;
+					text-align: center;
+				}
+
+				.icon-button-container[data-component='contact'] {
+					position: absolute;
+					top: 8px;
+					right: 8px;
+					opacity: 0;
+				}
+
+				&:hover {
+					.icon-button-container[data-component='contact'] {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='contact'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='contact'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 840px) {
+	.section[data-component='contact'] {
+		.container[data-component='contact'] {
+			.contacts-container[data-component='contact'] {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.section[data-component='contact'] {
+		.container[data-component='contact'] {
+			.contacts-container[data-component='contact'] {
+				grid-template-columns: repeat(1, auto);
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------

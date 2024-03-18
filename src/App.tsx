@@ -11,6 +11,7 @@ import './styles/scroll.scss';
 import './styles/typography.scss';
 
 import Header from './components/Header/Header';
+import Contact from './screens/Contact/Contact';
 import Education from './screens/Education/Education';
 import Experience from './screens/Experience/Experience';
 import Introduction from './screens/Introduction/Introduction';
@@ -30,6 +31,7 @@ const App = () => {
 			<Projects />
 			<Education />
 			<Thanks />
+			<Contact />
 		</>
 	);
 };
