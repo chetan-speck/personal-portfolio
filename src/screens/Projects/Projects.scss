@@ -1,0 +1,67 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='projects'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.container[data-component='projects'] {
+		max-width: var(--max-width);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.title[data-component='projects'] {
+			color: var(--primary);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.sub-title[data-component='projects'] {
+			color: var(--on-surface-variant);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.projects-container[data-component='projects'] {
+			display: flex;
+			flex-direction: column;
+			gap: var(--space);
+
+			.project[data-component='projects'] {
+				padding: var(--space);
+				border-radius: var(--shape-large);
+				outline: 1px solid var(--outline-variant);
+
+				.name[data-component='projects'] {
+					color: var(--on-surface);
+				}
+
+				.description[data-component='projects'] {
+					color: var(--on-surface-variant);
+					margin: var(--space) 0 0 0;
+				}
+
+				.features-container[data-component='projects'] {
+					.feature[data-component='projects'] {
+						color: var(--on-surface-variant);
+						margin: 16px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='projects'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='projects'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
