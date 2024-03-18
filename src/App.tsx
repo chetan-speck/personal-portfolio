@@ -16,6 +16,7 @@ import Experience from './screens/Experience/Experience';
 import Introduction from './screens/Introduction/Introduction';
 import Projects from './screens/Projects/Projects';
 import Skills from './screens/Skills/Skills';
+import Thanks from './screens/Thanks/Thanks';
 
 // -------------------------------------------------------------------------------------------
 
@@ -28,6 +29,7 @@ const App = () => {
 			<Experience />
 			<Projects />
 			<Education />
+			<Thanks />
 		</>
 	);
 };
