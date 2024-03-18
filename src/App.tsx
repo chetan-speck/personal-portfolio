@@ -10,6 +10,7 @@ import './styles/shape.scss';
 import './styles/scroll.scss';
 import './styles/typography.scss';
 
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Contact from './screens/Contact/Contact';
 import Education from './screens/Education/Education';
@@ -32,6 +33,7 @@ const App = () => {
 			<Education />
 			<Thanks />
 			<Contact />
+			<Footer />
 		</>
 	);
 };

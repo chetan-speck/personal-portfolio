@@ -1,0 +1,38 @@
+// -------------------------------------------------------------------------------------------
+
+.container[data-component='footer'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.frame[data-component='footer'] {
+		height: inherit;
+		max-width: var(--max-width);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: var(--space);
+		margin: auto;
+		gap: var(--space);
+
+		.joke[data-component='footer'] {
+			color: var(--on-surface-variant);
+			text-align: center;
+		}
+
+		.developer[data-component='footer'] {
+			color: var(--on-surface-variant);
+			text-align: center;
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 840px) {
+	.container[data-component='footer'] {
+		.frame[data-component='footer'] {
+			flex-direction: column;
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------

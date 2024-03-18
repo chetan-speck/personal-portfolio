@@ -131,7 +131,12 @@ const Contact = () => {
 					className='contacts-container'
 				>
 					{contacts.map((contact, index) => {
-						return <ContactCard {...contact} />;
+						return (
+							<ContactCard
+								key={`contact-${index}`}
+								{...contact}
+							/>
+						);
 					})}
 				</div>
 			</div>
