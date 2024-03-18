@@ -1,0 +1,114 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='experience'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.container[data-component='experience'] {
+		max-width: var(--max-width);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.title[data-component='experience'] {
+			color: var(--primary);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.sub-title[data-component='experience'] {
+			color: var(--on-surface-variant);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.experience-cards-container[data-component='experience'] {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			gap: var(--space);
+
+			.experience-card[data-component='experience'] {
+				background-color: var(--surface);
+				display: flex;
+				flex-direction: column;
+				padding: var(--space);
+				border-radius: var(--shape-large);
+				position: relative;
+
+				.tape[data-component='experience'] {
+					height: 56px;
+					width: 24px;
+					background-color: var(--secondary-container);
+					position: absolute;
+					top: -4px;
+					right: var(--space);
+					border-radius: var(--shape-extra-small)
+						var(--shape-extra-small) var(--shape-medium)
+						var(--shape-medium);
+				}
+
+				.role[data-component='experience'] {
+					color: var(--on-surface);
+				}
+
+				.company[data-component='experience'] {
+					color: var(--on-surface);
+					margin: var(--space) 0 0 0;
+				}
+
+				.location[data-component='experience'] {
+					color: var(--on-surface-variant);
+					margin: 2px 0 0 0;
+				}
+
+				.duration[data-component='experience'] {
+					color: var(--on-surface-variant);
+					margin: 2px 0 0 0;
+				}
+
+				.durationMonths[data-component='experience'] {
+					color: var(--on-surface-variant);
+					margin: 2px 0 0 0;
+				}
+
+				.description[data-component='experience'] {
+					color: var(--on-surface-variant);
+					margin: var(--space) 0 0 0;
+				}
+
+				.responsibilities-container[data-component='experience'] {
+					.responsibility[data-component='experience'] {
+						color: var(--on-surface-variant);
+						margin: 16px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='experience'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='experience'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 600px) {
+	.section[data-component='experience'] {
+		.container[data-component='experience'] {
+			.experience-cards-container[data-component='experience'] {
+				grid-template-columns: repeat(1, auto);
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
