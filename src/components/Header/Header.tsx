@@ -99,11 +99,11 @@ const Header = () => {
 					>
 						{routes.map((button, index) => {
 							return (
-								<div onClick={handleNavigationScreenToggle}>
-									<NavigationButton
-										key={`navigation-button-${index}`}
-										{...button}
-									/>
+								<div
+									key={`navigation-button-${index}`}
+									onClick={handleNavigationScreenToggle}
+								>
+									<NavigationButton {...button} />
 								</div>
 							);
 						})}

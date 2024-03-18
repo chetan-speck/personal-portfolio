@@ -1,0 +1,46 @@
+// -------------------------------------------------------------------------------------------
+
+.section[data-component='education'] {
+	border-top: 1px solid var(--outline-variant);
+
+	.container[data-component='education'] {
+		max-width: var(--max-width);
+		overflow: hidden;
+		margin: auto;
+		padding: calc(64px + var(--space)) var(--space) var(--space)
+			var(--space);
+
+		.title[data-component='education'] {
+			color: var(--primary);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.sub-title[data-component='education'] {
+			color: var(--on-surface-variant);
+			margin: 0 0 var(--space) 0;
+		}
+
+		.education-container[data-component='education'] {
+			.education[data-component='education'] {
+				color: var(--on-surface-variant);
+				margin: 16px 0 0 0;
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------
+
+.light-theme {
+	.section[data-component='education'] {
+		background-image: url(../../assets/backgrounds/topography/topography-light.svg);
+	}
+}
+
+.dark-theme {
+	.section[data-component='education'] {
+		background-image: url(../../assets/backgrounds/topography/topography-dark.svg);
+	}
+}
+
+// -------------------------------------------------------------------------------------------
