@@ -60,7 +60,7 @@ const jokes = [
 // -------------------------------------------------------------------------------------------
 
 const Footer = () => {
-	const [joke, setJoke] = useState((): string => {
+	const [joke, _setJoke] = useState((): string => {
 		const randomIndex = Math.floor(Math.random() * jokes.length);
 		return jokes[randomIndex];
 	});
