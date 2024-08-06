@@ -1,14 +1,12 @@
 // -------------------------------------------------------------------------------------------
 
 .section[data-component='contact'] {
-	border-top: 1px solid var(--outline-variant);
-
 	.container[data-component='contact'] {
 		max-width: var(--max-width);
 		overflow: hidden;
 		margin: auto;
-		padding: calc(64px + var(--space)) var(--space) var(--space)
-			var(--space);
+		padding: calc(64px + var(--space)) var(--space)
+			calc(64px + var(--space)) var(--space);
 
 		.title[data-component='contact'] {
 			color: var(--primary);

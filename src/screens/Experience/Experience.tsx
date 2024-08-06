@@ -7,6 +7,7 @@ import './Experience.scss';
 const experience = [
 	{
 		company: 'Ecomperor',
+		companySite: '',
 		location: 'Bhusawal',
 		role: 'Intern',
 		duration: 'July 2021 - Dec 2021',
@@ -24,6 +25,7 @@ const experience = [
 	},
 	{
 		company: 'Ecomperor',
+		companySite: '',
 		location: 'Kalyan',
 		role: 'Frontend Developer',
 		duration: 'January 2022 - Nov 2022',
@@ -41,6 +43,7 @@ const experience = [
 	},
 	{
 		company: 'M-SOFTS',
+		companySite: 'https://msofts.in/',
 		location: 'Bhusawal',
 		role: 'Full-stack Developer',
 		duration: 'December 2022 - February 2024',
@@ -54,6 +57,25 @@ const experience = [
 			'Implemented authentication and authorization with JWT tokens to enhance security.',
 			'Provided mentorship and technical guidance to junior and intern developers.',
 			'Conducted regular code reviews to ensure adherence to best practices.',
+		],
+	},
+	{
+		company: 'CrystalTechnosoft',
+		companySite: 'https://crystaltechnosoft.com/',
+		location: 'Nagpur',
+		role: 'Full-stack Developer',
+		duration: 'April 2024 - July 2024',
+		durationMonths: 4,
+		description: 'Worked on Goods Management project.',
+		responsibilities: [
+			'In charge of user panel frontend development.',
+			'Developed and maintained the user interface using React.js and Material-UI.',
+			'Integrated frontend with backend services using REST APIs.',
+			'Ensured responsive design and cross-browser compatibility.',
+			'Collaborated with the backend team to define and implement API requirements.',
+			'Participated in agile development processes, including sprint planning.',
+			'Conducted user testing and debugging to improve the user experience.',
+			'Provided technical support and documentation for the user panel features.',
 		],
 	},
 ];
@@ -107,12 +129,14 @@ const Experience = () => {
 								>
 									{data.role}
 								</div>
-								<div
+								<a
 									data-component='experience'
 									className='company title-medium'
+									href={data.companySite}
+									target={data.companySite && '_blank'}
 								>
 									{data.company},
-								</div>
+								</a>
 								<div
 									data-component='experience'
 									className='location body-medium'

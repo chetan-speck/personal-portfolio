@@ -10,6 +10,7 @@ import './styles/shape.scss';
 import './styles/scroll.scss';
 import './styles/typography.scss';
 
+import Border from './components/common-buttons/Border/Border';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Contact from './screens/Contact/Contact';
@@ -27,11 +28,17 @@ const App = () => {
 		<>
 			<Header />
 			<Introduction />
+			<Border />
 			<Skills />
+			<Border />
 			<Experience />
+			<Border />
 			<Projects />
+			<Border />
 			<Education />
+			<Border />
 			<Thanks />
+			<Border />
 			<Contact />
 			<Footer />
 		</>

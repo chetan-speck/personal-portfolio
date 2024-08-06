@@ -6,6 +6,20 @@ import './Projects.scss';
 
 const projects = [
 	{
+		name: 'Cargojet',
+		description:
+			'Cargojet is a comprehensive web platform designed to manage goods and transportation across states and interstate. It includes features for managing various branches responsible for receiving and delivering goods, as well as functionalities for user management and generating essential documents such as bills, statements, quotations, and memos.',
+		features: [
+			'Goods Management: Efficiently manage the transportation of goods within states and interstate.',
+			'Branch Management: Oversee various branches responsible for receiving and delivering goods.',
+			'User Management: Administer users who interact with the system, including branch admins, branch managers, and customers.',
+			'Document Generation: Generate and print essential documents such as bills, statements, quotations, and memos.',
+			'Goods Tracking: Track the state of goods, including whether they are loaded in a truck, unloaded at the delivery branch, or delivered.',
+			'Analytics Dashboard: Provide an analytics dashboard for administrators to monitor transportation efficiency and other key metrics.',
+			'Security Measures: Incorporate security measures to protect sensitive data and ensure privacy.',
+		],
+	},
+	{
 		name: 'Bhusawal Division Catering Vendor Id',
 		description:
 			'The Bhusawal Division Catering Vendor ID application is a platform designed to facilitate the registration and verification process for catering vendors associated with the railway division. It includes both a mobile and web application interface, ensuring accessibility and ease of use for vendors and administrators alike.',
