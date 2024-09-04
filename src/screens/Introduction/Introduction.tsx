@@ -63,7 +63,7 @@ const Introduction = () => {
 							className='resume-button label-large'
 							download='Chetan Thosare (resume)'
 						>
-							Download resume
+							Resume
 							<div
 								data-component='introduction'
 								className='overlay'

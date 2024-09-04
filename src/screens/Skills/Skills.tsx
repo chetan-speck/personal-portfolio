@@ -12,6 +12,7 @@ import mongodb from '../../assets/logos/mongodb.svg';
 import mysql from '../../assets/logos/mysql.svg';
 import node from '../../assets/logos/node.svg';
 import react from '../../assets/logos/react.svg';
+import three from '../../assets/logos/three.svg';
 import typescript from '../../assets/logos/typescript.svg';
 
 // -------------------------------------------------------------------------------------------
@@ -88,6 +89,12 @@ const skills = [
 		icon: git,
 		description:
 			'Git is a distributed version control system for tracking changes in source code during software development.',
+	},
+	{
+		label: 'Three.js',
+		icon: three,
+		description:
+			'Three.js is a JavaScript library that simplifies the creation and rendering of 3D graphics in web browsers using WebGL.',
 	},
 ];
 
